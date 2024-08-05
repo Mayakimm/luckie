@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root to: "pages#home"
 
   resources :users, only: %i[show]
-  resources :tasks, only: %i[new create update delete]
+  resources :tasks, only: %i[create update delete]
 end
