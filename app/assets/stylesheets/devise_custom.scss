@@ -1,0 +1,39 @@
+.login-container {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 300px;
+
+  .form-check {
+    width: 150px;
+  }
+}
+
+.signup-container {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.login-btn, .signup-btn, .password-btn {
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+
+.login-link {
+  // text-decoration: none;
+  color: black;
+}
+
+.password-container{
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.form-inputs {
+  margin: 0 auto;
+  width: 270px;
+}
