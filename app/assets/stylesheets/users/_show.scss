@@ -1,0 +1,21 @@
+#profile-container {
+  padding: 50px 80px;
+}
+
+.profile-img {
+  background-color: black;
+  border-radius: 100%;
+  padding: 25px;
+  color: white;
+}
+
+.profile-info {
+  margin-left: 30px;
+  position: relative;
+
+  .setting-icon {
+    position: absolute;
+    right: 30px;
+    top: 0px;
+  }
+}

@@ -1,1 +1,12 @@
-<%= current_user.nickname %>
+<div class="d-flex align-items-center" id="profile-container">
+  <div class="profile-img-container">
+    <p class="profile-img mb-0">img</p>
+  </div>
+  <div class="profile-info d-flex flex-column justify-content-center">
+    <%= link_to edit_user_path(current_user), class:"text-decoration-none text-dark" do %>
+      <i class="fa-solid fa-gear setting-icon"></i>
+    <% end %>
+    <p class="mb-0 fs-2"><%= current_user.nickname %></p>
+    <p class="mb-0">Following 0  Followers 0</p>
+  </div>
+</div>
