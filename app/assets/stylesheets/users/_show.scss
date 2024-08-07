@@ -1,5 +1,7 @@
-#profile-container {
-  padding: 50px 80px;
+#profile-container, #dashboard-container {
+  margin: 20px 80px;
+  margin-bottom: 0;
+  padding: 30px 10px;
 }
 
 .profile-img {
@@ -19,3 +21,45 @@
     top: 0px;
   }
 }
+#dashboard-container {
+  border: 1px solid black;
+}
+
+.dashboard {
+  margin: 0 auto;
+  margin: 0px 80px 50px 80px;
+  width: 50%;
+}
+
+.plan-container {
+  margin-top: 10px;
+}
+.plans-btn {
+  padding: 50px 80px;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+}
+
+.weekly-graph-container {
+  width: 100%;
+  height: 240px;
+  border: 1px solid black;
+  border-radius: 30px;
+  margin-top: 40px;
+
+  h6 {
+    text-align: center;
+  }
+}
+
+.move-calendar {
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
