@@ -1,0 +1,28 @@
+<% # Assume `date` is the start date of the week, e.g., the first day of the week %>
+<% start_of_week = Date.today.beginning_of_week(:monday) %>
+<% days_of_week = (0..5).map { |i| start_of_week + i.days } %>
+
+    <table class="calendar table table-bordered m-3">
+      <thead>
+        <tr>
+          <th></th> <!-- Empty top-left cell for the new column -->
+          <% # Add day names here if needed in the future %>
+          <% days_of_week.each do |day| %>
+            <th><%= day.strftime('%a') %></th> <!-- Abbreviated day name, e.g., Mon, Tue -->
+          <% end %>
+        </tr>
+      </thead>
+      <tbody>
+        <% @time_slots.each do |time_slot| %>
+          <tr>
+            <td><%= time_slot.strftime('%H:%M') %> - <%= (time_slot + @time_slot_duration).strftime('%H:%M') %></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
